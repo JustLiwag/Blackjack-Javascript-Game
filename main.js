@@ -1,3 +1,4 @@
+// Made by Justin Liwag
 let player = {
     name: "You",
     chips: 250
