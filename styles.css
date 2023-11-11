@@ -1,0 +1,115 @@
+body {
+    justify-content: center;
+    background: url("images/table.png");
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+#container {
+    position: relative;
+    top: 150px;
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    padding: 20px 30px 50px;
+    border: 3px solid whitesmoke;
+    box-shadow: 0px 2px 8px 3px black;
+}
+
+#title {
+    position: inherit;
+    top: -20px;
+    color: goldenrod;
+    font-size: 35px;
+}
+
+#message-el{
+    font-style: italic;
+}
+#player-el {
+    margin-bottom: 2px;
+}
+#gameover {
+    margin-top: 5px;
+    color: rgb(255, 96, 96);
+}
+
+#title, #content, #player-el, #gameover, #author {
+    text-shadow: 1px 1px 1px black;
+}
+
+#newgame {
+    display: none;
+    font-size: 12px;
+    width: 100px;
+    background: rgb(245, 219, 72);
+}
+
+button {
+    border: none;
+    color: darkgreen;
+    width: 150px;
+    background: goldenrod;
+    padding: 5px 0px 5px;
+    margin: 2px 0 2px;
+    border-radius: 2px;
+    font-weight: bolder;
+    box-shadow: 0px 1px 1px black;
+    transition: ease .3s;
+}
+
+button:hover {
+    cursor: pointer;
+    color: rgb(14, 87, 14);
+    background: gold;
+    box-shadow: 0px 1px 2px 1px black;
+}
+
+/* Coded by Justin LIWAG */
+#author {
+    position: relative;
+    top: 320px;
+    cursor: pointer;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: ease .5s;
+}
+
+#author:hover {
+    color: gold;
+}
+
+@media (max-width: 1000px) {
+    body {
+        max-height: 700px;
+        font-size: 13px;
+        background-size: 1000px;
+    }
+    #title {
+        font-size: 32px;
+    }
+    #container {
+        position: relative;
+        top: 80px;
+        width: 200px;
+        height: 300px;
+    }
+
+    button {
+        width: 110px;
+        font-size: 12px;
+    }
+    #newgame {
+        width: 100px;
+        font-size: 10px;
+    }
+
+    #author {
+        position: relative;
+        font-size: 11px;
+        top: 125px;
+    }
+}
